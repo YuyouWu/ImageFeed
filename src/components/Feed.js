@@ -10,8 +10,8 @@ class Feed extends React.Component {
         this.state = {
             imageArray: [
                 {
-                    link: 'https://i.dailymail.co.uk/i/pix/2015/09/01/18/2BE1E88B00000578-3218613-image-m-5_1441127035222.jpg',
-                    title: 'Google'
+                    link: 'https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1450248078000/photosp/e41c1f0f-2ed5-4f78-b92b-9900340b5d1a/stock-photo-river-travel-adventure-walking-foot-feet-boots-hike-going-e41c1f0f-2ed5-4f78-b92b-9900340b5d1a.jpg',
+                    title: 'Hiking'
                 }
             ]
         }
