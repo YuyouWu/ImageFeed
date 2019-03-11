@@ -12,6 +12,10 @@ class Input extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+        this.props.addImage({
+            link: this.state.link,
+            title: this.state.title
+        })
     }
 
     handleURLchange = (event) => {
@@ -24,22 +28,24 @@ class Input extends React.Component {
 
   	render() {
 	    return (
-	      <div>
+	      <div className = "InputCollection">
                 <form onSubmit={this.handleSubmit}>
                     <input 
+                        className = "TitleInput"
                         type="text" 
                         name="link" 
                         placeholder="Enter URL" 
                         onChange={this.handleURLchange}
                     />
                     <br/>
-                    <input 
+                    <input
+                        className = "URLInput"
                         type="text" 
                         name="title" 
                         placeholder="Title" 
                         onChange={this.handleTitlechange}
                     />
-                    <input type="submit" value="Submit" />
+                    <input className = "SubmitButton" type="submit" value="New Post" />
                 </form>
           </div>
 	    );
